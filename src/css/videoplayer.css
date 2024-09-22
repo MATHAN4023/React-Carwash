@@ -1,0 +1,20 @@
+/* Ensure the container covers the entire viewport */
+.video-container {
+    display: flex;
+    justify-content: center;  /* Centers video horizontally */
+    align-items: center;      /* Centers video vertically */
+    height: 100vh;            /* Full viewport height */
+    width: 100vw;             /* Full viewport width */
+    overflow: hidden;         /* Prevent overflow of content */
+  }
+  
+  /* Responsive video styling */
+  .responsive-video {
+    width: 100%;               /* Take the full width of the container */
+    height: auto;              /* Maintain aspect ratio */
+    max-width: 100%;           /* Ensure it doesn't overflow horizontally */
+    max-height: 100vh;         /* Ensure it doesn't overflow vertically */
+    object-fit: cover;         /* Maintain cover aspect ratio for better display */
+    position: relative;        /* Makes the video scale responsively */
+  }
+  

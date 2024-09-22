@@ -1,0 +1,64 @@
+/* Ensure the content takes the full height of the viewport */
+.hw100 {
+    height: 100vh;
+  }
+  
+  /* Heading styling */
+  .Heading {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .heading-title h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  /* Content box styling */
+  .box {
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Mission, Vision, and Values text styling */
+  .text-center h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .text-center p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Spacing */
+  .content-section {
+    margin-bottom: 30px;
+  }
+  
+  .bg-primary1 {
+    background-color: #ff4b5c; /* Bootstrap primary color */
+  }
+  
+  .bg-light {
+    background-color: #f8f9fa;
+  }
+  
+  .p-4 {
+    padding: 2rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* For smaller screens, adjust the heading size */
+    .heading-title h2 {
+      font-size: 2rem;
+    }
+  
+    /* Make sure boxes stack well */
+    .box {
+      margin-top: 10px;
+    }
+  }
+  
