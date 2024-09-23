@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background-color: #121212; /* Dark theme */
+    color: #fff; /* Light text for contrast */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .GalleryContainer {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide scrollbars */
+  }
+  
+  .Gallery {
+    display: flex;
+    overflow-x: auto; /* Horizontal scroll */
+    scroll-behavior: smooth;
+    padding: 20px; /* Spacing around gallery */
+  }
+  
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+  .Gallery::-webkit-scrollbar {
+    display: none; /* Hides scrollbar */
+  }
+  
+  /* Hide scrollbar for Firefox */
+  .Gallery {
+    scrollbar-width: none; /* Hide scrollbar */
+  }
+  
+  .gallery-item {
+    position: relative;
+    min-width: 300px; /* Fixed width for each item */
+    margin: 0 10px; /* Spacing between items */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Clip overflow */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  .gallery-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  }
+  
+  .gallery-item img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth image scaling */
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.05); /* Scale effect on image hover */
+  }
+  

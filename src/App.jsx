@@ -4,6 +4,10 @@ import Services from './Components/Services';
 import Nav from "./Components/Nav";
 import Videoplayer from "./Components/Videoplayer";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './Components/Footer';
+import Contactus from './Components/Contactus';
+import Counter from './Components/Counter';
+import Gallery from './Components/Gallery';
 
 
 function App() {
@@ -13,15 +17,17 @@ function App() {
       <div className="hero hw100 bgr"></div>
       <Videoplayer />
       <Aboutus/>
-      <Services />
-      
-      <div className="Counters-page w100"></div>
+      {/* <Services /> */}
+      Service Page
+      <Counter />
       <div className="Franchise hw100"></div>
       <div className="Gallery hw100"></div>
-      <div className="Contactus hw100"></div>
+      <Gallery />
+      <Contactus/>
       <div className="Map hw100"></div>
       <div className="FQA hw100"></div>
-      <div className="Footer hw100"></div>
+      {/* <div className="Footer hw100"></div> */}
+      <Footer />
 
     </>
   );

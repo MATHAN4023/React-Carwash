@@ -1,0 +1,73 @@
+.footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footer-logo h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #FF0000; /* Red for the logo */
+  }
+  .footer-links ul, .footer-social ul, .footer-locations ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .footer-links ul li, .footer-social ul li, .footer-locations ul li {
+    margin-bottom: 10px;
+  }
+  .footer-links ul li a, .footer-social ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .footer-links ul li a:hover, .footer-social ul li a:hover {
+    color: #FF0000; /* Red hover effect for links */
+  }
+  .footer-locations {
+    text-align: left;
+  }
+  .footer-locations h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #FF0000; /* Red for headings */
+  }
+  .footer-locations ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .footer-social ul {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-social ul li {
+    margin: 0 10px;
+  }
+  .footer-bottom {
+    border-top: 1px solid #444; /* Dark border for separation */
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #fff; /* White text */
+  }
+  .footer-bottom p {
+    color: #FF0000; /* Red for copyright text */
+  }
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-locations {
+      text-align: center;
+    }
+  }

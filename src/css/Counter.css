@@ -1,0 +1,40 @@
+.Counters-page {
+    display: flex;
+    flex-direction: column; /* Default to column for small screens */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: black; /* Background color */
+    height: auto; /* Ensures the height fits the content */
+    padding: 20px; /* Optional padding for spacing */
+    box-sizing: border-box; /* Includes padding in height calculation */
+  }
+  
+  .counter {
+    text-align: center;
+    margin: 20px; /* Adjust margin as needed */
+    color: white; /* Text color */
+  }
+  
+  .counter h1 {
+    font-size: 3rem; /* Adjust size as needed */
+    color: red; /* Counter number color */
+  }
+  
+  .counter p {
+    font-size: 1.2rem; /* Adjust size as needed */
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 768px) {
+    .Counters-page {
+      flex-direction: row; /* Change to row on medium and larger screens */
+      justify-content: space-around; /* Space the counters evenly */
+    }
+  
+    .counter {
+      flex: 1; /* Allow counters to grow equally */
+      margin: 10px; /* Adjust margin */
+    }
+  }
+  
